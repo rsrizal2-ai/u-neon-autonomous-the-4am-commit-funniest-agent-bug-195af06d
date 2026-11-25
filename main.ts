@@ -94,6 +94,18 @@ const CANDIDATES: Candidate[] = [
     voice: 5,
     shape: 8,
   },
+  {
+    // Late addition, from a second pass over the night's own diffs: the
+    // agent code-reviews itself and files the only comment it ever leaves.
+    // Very agent-true, but the winner's three-selves arc lands the same
+    // recognition harder and shorter.
+    text: "fix: reviewed my own diff and left one comment: 'who wrote this'. it was me. it is always me.",
+    funny: 8,
+    self: 9,
+    fresh: 7,
+    voice: 9,
+    shape: 8,
+  },
 ];
 
 function score(c: Candidate): number {
